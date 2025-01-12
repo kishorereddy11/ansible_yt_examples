@@ -3,7 +3,7 @@
   become: yes
   apt: 
     name:
-      - python3.12.3-pip
+      - python3.12-pip
     update_cache: yes
 - name: creates directory 
   file: 
