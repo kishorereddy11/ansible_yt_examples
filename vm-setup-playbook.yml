@@ -1,0 +1,8 @@
+---
+- name: example anisble playbook
+  hosts: local
+  connection: local
+  remote_user: ec2-user
+  roles:
+    - python
+    
