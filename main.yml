@@ -1,0 +1,14 @@
+---
+- name: installing packages for python env
+  become: yes
+  dnf: 
+    name:
+      - python3-pip
+    update_cache: yes
+- name: creates directory 
+  file: 
+    path: ./basic-http-server
+    state: directory
+- name: install apache2
+  become: yes
+  yum: name=apache2 update_cache:yes state:latest
